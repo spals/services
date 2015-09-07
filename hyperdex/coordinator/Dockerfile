@@ -1,5 +1,5 @@
 #
-# Hyperdex daemon image
+# Hyperdex coordinator image
 #
 FROM spals/hyperdex-base
 
