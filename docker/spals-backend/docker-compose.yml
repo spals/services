@@ -4,12 +4,4 @@
 # are pre-requisites for running the
 # BTS57 backend.
 #############################
-mysql:
-  image: mysql:5.7
-  ports:
-    - ${MYSQL_PORT}:3306
-  env_file:
-    - ./spals-backend.env
-  volumes:
-    - ~/data/spals/mysql:/var/lib/mysql
 
