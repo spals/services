@@ -1,7 +1,8 @@
 ### FOUNDATIONAL SERVICES ###
-#
-# These are third party services which
-# are pre-requisites for running the
-# BTS57 backend.
-#############################
-
+airflow-postgres:
+  image: spals/airflow-postgres:9.6.2
+  ports:
+    - ${AIRFLOW_POSTGRES_PORT}:5432
+  environment:
+    AIRFLOW_POSTGRES_PASSWORD: ${AIRFLOW_POSTGRES_PASSWORD}
+    AIRFLOW_POSTGRES_USER: ${AIRFLOW_POSTGRES_USER}
