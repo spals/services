@@ -1,7 +1,7 @@
 #
 # Base Ubuntu image with some common utilities.
 #
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 # Install some useful utils.
 RUN \
